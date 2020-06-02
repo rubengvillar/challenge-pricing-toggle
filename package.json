@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "gulp build",
+    "dev": "gulp"
   },
   "author": "Ruben G. Villar",
   "license": "ISC",
@@ -17,5 +18,5 @@
     "gulp-sass": "^4.1.0"
   },
   "dependencies": {},
-  "description": ""
+  "description": "Challenge frontEnd Mentor price change"
 }
