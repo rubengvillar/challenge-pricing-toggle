@@ -4,5 +4,40 @@ html(lang="en")
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         title Pricing component with toggle
-    body
-        h1 Pricing component with toggle
+        link(rel="stylesheet", href="styles.css")
+        link(href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet")
+    body.body
+        h1.title Our Pricing
+        .selected-price
+            span.selected-price--text Annually
+            label.selected-price--check
+                input(type="checkbox").selected-price--checked#checked-price
+                span.selected-price--slider
+            span.selected-price--text Mounthly
+        .grid-price
+            .grid-price-item.grid-price-item--basic
+                h2.grid-price-item--title Basic
+                span.grid-price-item--price#price-basic 199.99
+                ul.grid-price-item--list
+                    li.grid-price-item--list-item 500 GB Storage
+                    li.grid-price-item--list-item 2 Users Allowed
+                    li.grid-price-item--list-item Send Up to 3 GB
+                button.grid-price-item--button Learn more
+            .grid-price-item.grid-price-item--selected
+                h2.grid-price-item--title Professional
+                span.grid-price-item--price#price-professional 249.99
+                ul.grid-price-item--list
+                    li.grid-price-item--list-item 1 TB Storage
+                    li.grid-price-item--list-item 5 Users Allowed
+                    li.grid-price-item--list-item Send Up to 10 GB
+                button.grid-price-item--button Learn more
+            .grid-price-item.grid-price-item--master
+                h2.grid-price-item--title Master
+                span.grid-price-item--price#price-master 399.99
+                ul.grid-price-item--list
+                    li.grid-price-item--list-item 2 TB Storage
+                    li.grid-price-item--list-item 10 Users Allowed
+                    li.grid-price-item--list-item Send Up to 20 GB
+                button.grid-price-item--button Learn more
+        script(src="/js/scripts.js")
+        
