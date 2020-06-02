@@ -107,9 +107,32 @@ body {
         &--title {
             padding-top: 1em;
         }
+         &--button {
+            margin-top: 2em;
+            padding: 1em;
+            width: 100%;
+            background: $colorPrimary;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            text-transform: uppercase;
+            &:hover {
+                box-shadow: 0 0 0 2px $colorLight;
+                background: white;
+                color: $colorDark;
+            }
+        }
         &--selected {
             background: $colorPrimary;
             color: white;
+            & .grid-price-item--button {
+                background: white;
+                color: $colorDark;
+                &:hover {
+                    background: $colorPrimary;
+                    color: white;
+                }
+            }
         }
         @media screen and (min-width: $sizeDesktop) {
             &--basic {
@@ -147,20 +170,6 @@ body {
                 border-bottom: 1px solid $colorVery;
             }
         }
-        &--button {
-            margin-top: 2em;
-            padding: 1em;
-            width: 100%;
-            background: $colorPrimary;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            text-transform: uppercase;
-            &:hover {
-                box-shadow: 0 0 0 1px $colorLight;
-                background: white;
-                color: $colorDark;
-            }
-        }
+       
     }
 }
